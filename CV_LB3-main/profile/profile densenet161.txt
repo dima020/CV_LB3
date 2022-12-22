@@ -1,0 +1,69 @@
+Name														CUDA Mem	Self CUDA Mem	# of Calls
+																
+aten::empty														338.52 Mb	338.52 Mb	806
+model_inference														239.19 Mb	-9.08 Mb	1
+aten::batch_norm														113.13 Mb	0 b	161
+aten::_batch_norm_impl_index														113.13 Mb	0 b	161
+aten::cudnn_batch_norm														113.13 Mb	0 b	161
+aten::empty_like														113.13 Mb	0 b	161
+aten::cat														86.15 Mb	86.15 Mb	82
+aten::conv2d														44.29 Mb	0 b	160
+aten::convolution														44.29 Mb	0 b	160
+aten::_convolution														44.29 Mb	0 b	160
+aten::cudnn_convolution														44.29 Mb	-181.09 Mb	160
+aten::max_pool2d														3.62 Mb	0 b	1
+aten::max_pool2d_with_indices														3.62 Mb	3.62 Mb	1
+aten::avg_pool2d														1.06 Mb	1.06 Mb	3
+aten::adaptive_avg_pool2d														9.00 Kb	0 b	1
+aten::mean														9.00 Kb	9.00 Kb	1
+aten::linear														4.00 Kb	0 b	1
+aten::addmm														4.00 Kb	4.00 Kb	1
+aten::softmax														4.00 Kb	0 b	1
+aten::_softmax														4.00 Kb	4.00 Kb	1
+aten::zeros														0 b	0 b	1
+aten::zero_														0 b	0 b	1
+cudaStreamIsCapturing														0 b	0 b	321
+cudaStreamGetPriority														0 b	0 b	321
+cudaDeviceGetStreamPriorityRange														0 b	0 b	321
+cudaLaunchKernel														0 b	0 b	837
+void cask_cudnn::computeOffsetsKernel<false, false>(...														0 b	0 b	58
+volta_scudnn_128x64_relu_xregs_large_nn_v1														0 b	0 b	1
+aten::view														0 b	0 b	161
+void cudnn::bn_fw_inf_1C11_kernel_NCHW<float, float,...														0 b	0 b	161
+aten::relu_														0 b	0 b	161
+aten::clamp_min_														0 b	0 b	161
+void at::native::vectorized_elementwise_kernel<4, at...														0 b	0 b	161
+void at::native::(anonymous namespace)::max_pool_for...														0 b	0 b	1
+aten::narrow														0 b	0 b	4
+aten::slice														0 b	0 b	4
+aten::as_strided														0 b	0 b	7
+cudaMemcpyAsync														0 b	0 b	5
+Memcpy DtoD (Device -> Device)														0 b	0 b	5
+volta_scudnn_128x32_relu_interior_nn_v1														0 b	0 b	1
+void cudnn::winograd::generateWinogradTilesKernel<0,...														0 b	0 b	54
+volta_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148...														0 b	0 b	54
+void at::native::(anonymous namespace)::CatArrayBatc...														0 b	0 b	78
+volta_scudnn_128x64_relu_interior_nn_v1														0 b	0 b	21
+volta_scudnn_128x32_relu_medium_nn_v1														0 b	0 b	3
+volta_scudnn_128x128_relu_interior_nn_v1														0 b	0 b	1
+void at::native::(anonymous namespace)::avg_pool2d_o...														0 b	0 b	3
+void cudnn::ops::nchwToNhwcKernel<float, float, floa...														0 b	0 b	31
+volta_scudnn_128x32_sliced1x4_ldg4_relu_exp_interior...														0 b	0 b	31
+void cudnn::ops::nhwcToNchwKernel<float, float, floa...														0 b	0 b	31
+cudaOccupancyMaxActiveBlocksPerMultiprocessorWithFla...														0 b	0 b	145
+void cudnn::cnn::kern_precompute_indices<false>(int*...														0 b	0 b	24
+void precomputed_convolve_sgemm<float, 1024, 5, 5, 4...														0 b	0 b	24
+void cudnn::winograd_nonfused::winogradForwardData4x...														0 b	0 b	24
+void cudnn::winograd_nonfused::winogradForwardFilter...														0 b	0 b	24
+volta_sgemm_64x64_nn														0 b	0 b	24
+void cudnn::winograd_nonfused::winogradForwardOutput...														0 b	0 b	24
+void at::native::reduce_kernel<512, 1, at::native::R...														0 b	0 b	1
+aten::flatten														0 b	0 b	1
+aten::_reshape_alias														0 b	0 b	1
+aten::t														0 b	0 b	1
+aten::transpose														0 b	0 b	1
+aten::expand														0 b	0 b	1
+std::enable_if<!(false), void>::type internal::gemvx...														0 b	0 b	1
+aten::squeeze														0 b	0 b	1
+void (anonymous namespace)::softmax_warp_forward<flo...														0 b	0 b	1
+cudaDeviceSynchronize														0 b	0 b	1
